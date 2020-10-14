@@ -1,0 +1,51 @@
+<head>
+    <title>Target RPS RCAV</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NP62Bq/AWk/C0+akfbfC14VNlbfs8YUod75NI/PPo+EWJuXgny41ncvDi7tB2gq1VN6ZIhqQjKHW8/1EXTMDZg==" />
+
+    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+    <meta charset="utf-8">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
+    <script src="/assets/application-06450d1c485665bb264393ca749ff51bf2e27f72152ceba8711f08a3c103c4b3.js"></script>
+  </head>
+
+  <body>
+      <div>
+    <a href="/rock">
+      Play Rock
+    </a>
+  </div>
+
+  <div>
+    <a href="/paper">
+      Play Paper
+    </a>
+  </div>
+
+  <div>
+    <a href="/scissors">
+      Play Scissors
+    </a>
+  </div>
+<h1>We played scissors!
+  <h1>
+    <% comp_move=["rock","paper", "scissors"].sample %>
+    <h1>
+      They played <%= comp_move %>!
+    </h1>
+    <%if comp_move == "rock"%>
+      <h2>We lost!</h2>
+    <%elsif comp_move =="paper"%>
+      <h2>We won!</h2>
+    <%elsif comp_move == "scissors"%>
+      <h2>We tied!</h2>
+    <%end%>
+  <a href="/">
+    Rules
+  </a>
+
+  </body>
